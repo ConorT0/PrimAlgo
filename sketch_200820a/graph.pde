@@ -23,4 +23,10 @@ class Graph{
   public double getDistance(int nodeA, int nodeB){
     return Math.sqrt( Math.pow( locations[nodeA][0] - locations[nodeB][0], 2) + Math.pow(locations[nodeA][1] - locations[nodeB][1], 2) );
   }
+  public int getX(int node){
+    return locations[node][0];
+  }
+  public int getY(int node){
+    return locations[node][1];
+  }
 }
